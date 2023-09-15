@@ -44,6 +44,7 @@ const toggleMenu = () => {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.35;
+    z-index: 10;
 
     @media screen and (min-width: 1440px) {
         font-size: 20px;
@@ -59,6 +60,7 @@ const toggleMenu = () => {
         right: 0;
         width: 100%;
         max-width: 360px;
+        height: 436px;
 
         /* .nav__wrapper--open */
         &--open {

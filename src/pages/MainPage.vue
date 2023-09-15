@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import AppHeader from '@/components/AppHeader.vue';
+import MainPageBanner from '@/components/MainPageBanner.vue';
 </script>
 
 <template>
   <div class="center-wrapper">
     <AppHeader />
-  <main>
-
-  </main>
+    <main>
+      <MainPageBanner />
+    </main>
   </div>
-
 </template>
 
 <style scoped lang="scss">
@@ -22,5 +22,4 @@ import AppHeader from '@/components/AppHeader.vue';
     max-width: 1440px;
   }
 }
-
 </style>
