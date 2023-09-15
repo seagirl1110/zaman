@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AppHeader from '@/components/AppHeader.vue';
 import MainPageBanner from '@/components/MainPageBanner.vue';
+import MainPageStories from '@/components/MainPageStories.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import MainPageBanner from '@/components/MainPageBanner.vue';
     <AppHeader />
     <main>
       <MainPageBanner />
+      <MainPageStories />
     </main>
   </div>
 </template>
