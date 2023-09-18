@@ -5,26 +5,32 @@ import MainMenu from './MainMenu.vue';
 
 <template>
     <header class="header">
-        <AppLogo />
-        <MainMenu />
+        <div class="header__wrapper center-wrapper">
+            <AppLogo />
+            <MainMenu />
+        </div>
     </header>
 </template>
 
 <style scoped lang="scss">
 .header {
-    height: 48px;
-    padding: 0 16px;
     background-color: #A07F56;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
 
-    @media screen and (min-width: 1440px) {
-        height: 100px;
-        padding: 0 60px;
-        column-gap: 60px;
-        justify-content: start;
+    /* .header__wrapper */
+    .header__wrapper {
+        height: 48px;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        @media screen and (min-width: 1440px) {
+            height: 100px;
+            padding: 0 60px;
+            column-gap: 60px;
+            justify-content: start;
+        }
     }
 }
 </style>

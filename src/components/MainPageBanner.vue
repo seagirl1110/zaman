@@ -1,10 +1,12 @@
 <template>
     <section class="banner">
-        <div class="banner__content">
-            <div class="banner__text">Встреча вкуса и искусства на одной тарелке</div>
-            <h1 class="banner__title">Кафе-музей татарской кухни</h1>
+        <div class="banner__wrapper center-wrapper">
+            <div class="banner__content">
+                <div class="banner__text">Встреча вкуса и искусства на одной тарелке</div>
+                <h1 class="banner__title">Кафе-музей татарской кухни</h1>
+            </div>
+            <button class="banner__button">Посмотреть меню</button>
         </div>
-        <button class="banner__button">Посмотреть меню</button>
     </section>
 </template>
 
@@ -16,10 +18,6 @@
     background-position: 0 -48px;
     background-size: cover;
     height: 328px;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
     position: relative;
 
     @media screen and (min-width: 1440px) {
@@ -27,8 +25,6 @@
         background-position: right;
         background-size: contain;
         height: 640px;
-        padding-left: 58px;
-        row-gap: 66px;
     }
 
     /* .banner::before */
@@ -43,6 +39,19 @@
 
         @media screen and (min-width: 1440px) {
             content: none;
+        }
+    }
+
+    /* .banner__wrapper */
+    &__wrapper {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        @media screen and (min-width: 1440px) {
+            padding-left: 58px;
+            row-gap: 66px;
         }
     }
 

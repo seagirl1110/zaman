@@ -11,13 +11,15 @@ onMounted(async () => {
 
 <template>
     <section class="stories">
-        <div class="stories__scroll">
-            <article v-for="item in stories" :key="item.id" class="stories__item">
-                <div class="stories__img-wrapper">
-                    <div class="stories__img" :style="{ backgroundImage: 'url(' + item.image + ')' }"></div>
-                </div>
-                <div class="stories__name">{{ item.name }}</div>
-            </article>
+        <div class="center-wrapper">
+            <div class="stories__scroll">
+                <article v-for="item in stories" :key="item.id" class="stories__item">
+                    <div class="stories__img-wrapper">
+                        <div class="stories__img" :style="{ backgroundImage: 'url(' + item.image + ')' }"></div>
+                    </div>
+                    <div class="stories__name">{{ item.name }}</div>
+                </article>
+            </div>
         </div>
     </section>
 </template>
