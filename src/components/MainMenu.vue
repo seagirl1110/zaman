@@ -27,7 +27,7 @@ const toggleMenu = () => {
                             stroke="#373737" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
                 </button>
-                <a href="tel:+79387653644" class="nav__phone nav__link">+7 938 765 36 44</a>
+                <a href="tel:+78001112233" class="nav__phone nav__link">8 800 111 22 33</a>
             </div>
             <ul class="nav__menu menu">
                 <li v-for="item in menuItems" :key="item" class="menu__item">
@@ -60,7 +60,7 @@ const toggleMenu = () => {
         right: 0;
         width: 100%;
         max-width: 360px;
-        height: 436px;
+        height: 376px;
 
         /* .nav__wrapper--open */
         &--open {
